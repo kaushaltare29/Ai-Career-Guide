@@ -17,10 +17,10 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
-import { features } from "./data/features";
-import { testimonial } from "./data/testimonial";
-import { faqs } from "./data/faqs";
-import { howItWorks } from "./data/howItWorks";
+import { features } from "../data/features";
+import { testimonial } from "../data/testimonial";
+import { faqs } from "../data/faqs";
+import { howItWorks } from "../data/howItWorks";
 
 export default function LandingPage() {
   return (
