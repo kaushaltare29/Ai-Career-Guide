@@ -1,32 +1,32 @@
 export const faqs = [
   {
-    question: "What makes Sensai unique as a career development tool?",
+    question: "What makes KareerAI unique as a career development platform?",
     answer:
-      "Sensai combines AI-powered career tools with industry-specific insights to help you advance your career. Our platform offers three main features: an intelligent resume builder, a cover letter generator, and an adaptive interview preparation system. Each tool is tailored to your industry and skills, providing personalized guidance for your professional journey.",
+      "KareerAI uses AI-powered tools to help you grow your career smarter. It offers three key features: a smart resume builder, a personalized cover letter generator, and adaptive interview prep. Everything is tailored to your skills, background, and the industry you're targeting.",
   },
   {
-    question: "How does Sensai create tailored content?",
+    question: "How does KareerAI personalize the content for me?",
     answer:
-      "Sensai learns about your industry, experience, and skills during onboarding. It then uses this information to generate customized resumes, cover letters, and interview questions. The content is specifically aligned with your professional background and industry standards, making it highly relevant and effective.",
+      "During onboarding, KareerAI learns about your experience, education, and interests. It then uses this information to generate resumes, cover letters, and interview questions that are aligned with your goals and industry standards.",
   },
   {
-    question: "How accurate and up-to-date are Sensai's industry insights?",
+    question: "How reliable are KareerAI's industry insights?",
     answer:
-      "We update our industry insights weekly using advanced AI analysis of current market trends. This includes salary data, in-demand skills, and industry growth patterns. Our system constantly evolves to ensure you have the most relevant information for your career decisions.",
+      "KareerAI updates its insights weekly by analyzing the latest job trends, skill demand, and salary data. This ensures you always get accurate, up-to-date information to guide your career choices.",
   },
   {
-    question: "Is my data secure with Sensai?",
+    question: "Is my information safe on KareerAI?",
     answer:
-      "Absolutely. We prioritize the security of your professional information. All data is encrypted and securely stored using industry-standard practices. We use Clerk for authentication and never share your personal information with third parties.",
+      "Yes, your privacy and security are our top priorities. All your data is encrypted and securely stored. We use Clerk for authentication and never share your data with third parties.",
   },
   {
     question: "How can I track my interview preparation progress?",
     answer:
-      "Sensai tracks your performance across multiple practice interviews, providing detailed analytics and improvement suggestions. You can view your progress over time, identify areas for improvement, and receive AI-generated tips to enhance your interview skills based on your responses.",
+      "KareerAI monitors your performance across multiple mock interviews. You’ll get clear analytics, improvement tips, and personalized feedback based on your answers—so you can improve with each attempt.",
   },
   {
-    question: "Can I edit the AI-generated content?",
+    question: "Can I customize the AI-generated resumes and cover letters?",
     answer:
-      "Yes! While Sensai generates high-quality initial content, you have full control to edit and customize all generated resumes, cover letters, and other content. Our markdown editor makes it easy to refine the content to perfectly match your needs.",
+      "Absolutely! KareerAI gives you full control. You can edit and personalize every part of the generated content using a built-in markdown editor to match your unique style and preferences.",
   },
 ];

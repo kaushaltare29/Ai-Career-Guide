@@ -23,7 +23,7 @@ import useFetch from "@/hooks/use-fetch";
 import { useUser } from "@clerk/nextjs";
 import { entriesToMarkdown } from "@/app/lib/helper";
 import { resumeSchema } from "@/app/lib/schema";
-import html2pdf from "html2pdf.js/dist/html2pdf.min.js";
+// import html2pdf from "html2pdf.js/dist/html2pdf.min.js";
 
 export default function ResumeBuilder({ initialContent }) {
   const [activeTab, setActiveTab] = useState("edit");
@@ -116,6 +116,10 @@ export default function ResumeBuilder({ initialContent }) {
     setIsGenerating(true);
     try {
       const element = document.getElementById("resume-pdf");
+
+      // ✅ Dynamically import html2pdf here
+      const html2pdf = (await import("html2pdf.js")).default;
+
       const opt = {
         margin: [15, 15],
         filename: "resume.pdf",
@@ -124,7 +128,7 @@ export default function ResumeBuilder({ initialContent }) {
         jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
       };
 
-      await html2pdf().set(opt).from(element).save();
+      html2pdf().set(opt).from(element).save();
     } catch (error) {
       console.error("PDF generation error:", error);
     } finally {
@@ -401,13 +405,15 @@ export default function ResumeBuilder({ initialContent }) {
               preview={resumeMode}
             />
           </div>
-          <div className="hidden">
+          <div style={{ position: "absolute", left: "-9999px", top: 0 }}>
             <div id="resume-pdf">
               <MDEditor.Markdown
                 source={previewContent}
                 style={{
                   background: "white",
                   color: "black",
+                  padding: "20px",
+                  width: "800px",
                 }}
               />
             </div>
